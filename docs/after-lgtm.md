@@ -17,8 +17,8 @@ One label in, one label out, and the workflow never merges or closes anything.
 
 | Label | Set by | Meaning |
 | --- | --- | --- |
-| `LGTM` | the author | The work is done. Babysitting starts. |
-| `RTM` | the gate | Ready to merge: `LGTM`, an approval from someone other than the author, green CI, no conflict, no changes requested. |
+| `LGTM` | the author | "Looks good to me": the work is done. Babysitting starts. |
+| `RTM` | the gate | "Ready to merge": `LGTM`, an approval from someone other than the author, green CI, no conflict, no changes requested. |
 | `REWORK` | the fixer | Main changed in a way that needs the author to change their own lines. `LGTM` comes off. |
 | `CLOSE` | the fixer | Main already does what the PR does. `LGTM` comes off. A person closes it. |
 | `babysitting` | the fixer | A fix is running on the branch. Nothing else pushes. |

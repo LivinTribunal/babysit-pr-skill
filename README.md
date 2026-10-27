@@ -76,7 +76,7 @@ message. "Still waiting" is not news.
 - **Keep the PR the size of its goal.** Review loops grow a PR one
   cheap-looking fix at a time. Fix real bugs, decline the rest in writing, and
   file the worthwhile ones as issues.
-- **Ready is a list, and LGTM is a person's word.** Green CI, review bots
+- **Ready is a list, and LGTM ("looks good to me") is a person's word.** Green CI, review bots
   finished on this head, no unresolved thread, no conflict. Then report it and
   stop. The agent adds `LGTM` only when told to hand the PR over.
 
@@ -85,7 +85,7 @@ message. "Still waiting" is not news.
 The skill stops at ready because the next wait is for a person, and that wait
 is where PRs go stale. `docs/after-lgtm.md` is the design for a workflow that
 watches every `LGTM` PR, merges main in when it conflicts, re-runs red CI once
-and then fixes it, and adds `RTM` when someone else approves. It never merges,
+and then fixes it, and adds `RTM` ("ready to merge") when someone else approves. It never merges,
 never closes, and never changes a line the author wrote: a resolution that
 would have to is handed back with `REWORK` instead.
 
